@@ -62,3 +62,13 @@ def Write_To_File():
     Animal_Lifespan_Data.close()
     
 Write_To_File()
+
+#Confirming data written to file
+def Check_File():
+    file1 = open("Animal_Lifespan_Data.txt", "r")
+    print("Output of Readlines after writing")
+    print(file1.read())
+    print()
+    file1.close()
+
+Check_File()
